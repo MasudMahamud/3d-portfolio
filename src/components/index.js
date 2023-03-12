@@ -1,4 +1,3 @@
-
 import Hero from "./Hero";
 import Navbar from "./Navbar";
 import About from "./About";
@@ -8,11 +7,9 @@ import Works from "./Works";
 import Feedbacks from "./Feedbacks";
 import Contact from "./Contact";
 import StarsCanvas from "./StarsCanvas";
-import NavigationDots from "./NavigationDots";
-import SocialMedia from "./SocialMedia";
 
 
-export { 
+export {
   Hero,
   Navbar,
   About,
@@ -21,7 +18,5 @@ export {
   Works,
   Feedbacks,
   Contact,
-  StarsCanvas,
-  NavigationDots,
-  SocialMedia
+  StarsCanvas
 };

@@ -8,6 +8,7 @@ import {
   typescript,
   html,
   css,
+  bootstrap,
   reactjs,
   redux,
   tailwind,
@@ -26,11 +27,8 @@ import {
   threejs,
 } from "../assets";
 
+// navigation start
 export const navLinks = [
-  {
-    id: "home",
-    title: "Home",
-  },
   {
     id: "about",
     title: "About",
@@ -44,7 +42,10 @@ export const navLinks = [
     title: "Contact",
   },
 ];
+// navigation end
 
+
+// services start
 const services = [
   {
     title: "Frontend Developer",
@@ -63,15 +64,22 @@ const services = [
     icon: creator,
   },
 ];
+// services end
 
+
+// technologies start
 const technologies = [
   {
-    name: "HTML 5",
+    name: "HTML",
     icon: html,
   },
   {
-    name: "CSS 3",
+    name: "CSS",
     icon: css,
+  },
+  {
+    name: "Bootstrap",
+    icon: bootstrap,
   },
   {
     name: "JavaScript",
@@ -82,7 +90,7 @@ const technologies = [
     icon: typescript,
   },
   {
-    name: "React JS",
+    name: "React Js",
     icon: reactjs,
   },
   {
@@ -94,7 +102,7 @@ const technologies = [
     icon: tailwind,
   },
   {
-    name: "Node JS",
+    name: "Node Js",
     icon: nodejs,
   },
   {
@@ -102,27 +110,30 @@ const technologies = [
     icon: mongodb,
   },
   {
-    name: "Three JS",
+    name: "Three Js",
     icon: threejs,
   },
   {
-    name: "git",
+    name: "Git",
     icon: git,
   },
   {
-    name: "figma",
+    name: "Figma",
     icon: figma,
   },
   {
-    name: "docker",
+    name: "Docker",
     icon: docker,
   },
 ];
+// technologies end
 
+
+// experiences start
 const experiences = [
   {
     title: "React.js Developer",
-    company_name: "Starbucks",
+    company_name: "Expert",
     icon: starbucks,
     iconBg: "#383E56",
     date: "March 2020 - April 2021",
@@ -135,7 +146,7 @@ const experiences = [
   },
   {
     title: "React Native Developer",
-    company_name: "Tesla",
+    company_name: "Expert",
     icon: tesla,
     iconBg: "#E6DEDD",
     date: "Jan 2021 - Feb 2022",
@@ -148,7 +159,7 @@ const experiences = [
   },
   {
     title: "Web Developer",
-    company_name: "Shopify",
+    company_name: "Expert",
     icon: shopify,
     iconBg: "#383E56",
     date: "Jan 2022 - Jan 2023",
@@ -161,7 +172,7 @@ const experiences = [
   },
   {
     title: "Full stack Developer",
-    company_name: "Meta",
+    company_name: "Mern",
     icon: meta,
     iconBg: "#E6DEDD",
     date: "Jan 2023 - Present",
@@ -173,19 +184,22 @@ const experiences = [
     ],
   },
 ];
+// experiences end
 
+
+// testimonials start
 const testimonials = [
   {
     testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
+      "I've never met a web developer who truly cares about their clients' success like Rick does.",
     name: "Sara Lee",
-    designation: "CFO",
+    designation: "CEO",
     company: "Acme Co",
     image: "https://randomuser.me/api/portraits/women/4.jpg",
   },
   {
     testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
+      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
     name: "Chris Brown",
     designation: "COO",
     company: "DEF Corp",
@@ -195,8 +209,8 @@ const testimonials = [
     testimonial:
       "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
     name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
+    designation: "CFO",
+    company: "Enterprises",
     image: "https://randomuser.me/api/portraits/women/6.jpg",
   },
 ];
@@ -206,7 +220,7 @@ const projects = [
     name: "Doctor-Portal",
     description:
       `Web-based platform that allows Patients can book an appointment, Patients can review on the doctor, patients can log in with google
-      Admin can add doctor and admin have an extra dashboard and only admin can access admin dashboard
+      Admin can access admin dashboard
       and doctor have many features.`,
     tags: [
       {
@@ -270,5 +284,6 @@ const projects = [
     source_code_link: "https://github.com/MasudMahamud/creative-agency-client",
   },
 ];
+// testimonials end
 
 export { services, technologies, experiences, testimonials, projects };

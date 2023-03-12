@@ -1,7 +1,7 @@
 import React from "react";
 import { styles } from "../styles";
-import { ComputersCanvas } from "./canvas";
 import { motion } from "framer-motion";
+import { ComputersCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 
 
@@ -50,4 +50,4 @@ const Hero = () => {
   );
 };
 
-export default SectionWrapper(Hero, "home");
+export default SectionWrapper(Hero, "");
