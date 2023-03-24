@@ -1,14 +1,14 @@
 import React, { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
-
 import { styles } from "../styles";
 import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
+import StarsCanvas from "./StarsCanvas";
 
 const Contact = () => {
-  // console.log(meta.env.VITE_APP_EMAILJS_SERVICE_ID)
+
   const formRef = useRef();
   const [form, setForm] = useState({
     name: "",
@@ -73,7 +73,7 @@ const Contact = () => {
         variants={slideIn("left", "tween", 0.2, 1)}
         className="flex-[0.75] bg-black-100 p-8 rounded-2xl"
       >
-        <p className={styles.sectionSubText}>Get in touch</p>
+        <p className={styles.sectionSubText}>Get In Touch</p>
         <h3 className={styles.sectionHeadText}>Contact.</h3>
 
         <form
@@ -130,6 +130,7 @@ const Contact = () => {
       >
         <EarthCanvas />
       </motion.div>
+      {/* <StarsCanvas/> */}
     </div>
   );
 };

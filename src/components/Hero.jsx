@@ -3,7 +3,7 @@ import { styles } from "../styles";
 import { motion } from "framer-motion";
 import { ComputersCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
-
+import Typewriter from "typewriter-effect";
 
 const Hero = () => {
   return (
@@ -17,9 +17,30 @@ const Hero = () => {
         </div>
 
         <div>
-          <h1 className={`${styles.heroHeadText} text-white`}>
-            Hi, I'm <span className="text-[#915EFF]">Masud</span>
-          </h1>
+          <h2 className={`${styles.heroHeadText} text-white`}>
+            I'm <span className="text-[#915EFF]">a</span>
+          </h2>
+          <p
+            style={{
+              fontSize: "20px",
+              fontWeight: "bold",
+            }}
+          >
+            <Typewriter
+              options={{
+                strings: [
+                  "Font-End Developer 🌹",
+                  "MERN Stack Developer ❤️",
+                  "Freelancer 🌷",
+                ],
+                autoStart: true,
+                loop: true,
+                typeSpeed: 50,
+                deleteSpeed: 50,
+              }}
+            />
+          </p>
+
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
             I develop 3D visuals, user <br className="sm:block hidden" />
             interfaces and web applications

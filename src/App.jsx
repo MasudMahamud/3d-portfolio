@@ -9,7 +9,7 @@ import {
   Feedbacks,
   Tech,
   Works,
-  // StarsCanvas
+  Footer,
 } from "./components";
 
 const App = () => {
@@ -29,8 +29,8 @@ const App = () => {
 
         <div className="relative z-0">
           <Contact />
-          {/* <StarsCanvas /> */}
         </div>
+        <Footer />
       </div>
     </BrowserRouter>
   );

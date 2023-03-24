@@ -7,6 +7,7 @@ import Works from "./Works";
 import Feedbacks from "./Feedbacks";
 import Contact from "./Contact";
 import StarsCanvas from "./StarsCanvas";
+import Footer from "./Footer";
 
 
 export {
@@ -18,5 +19,6 @@ export {
   Works,
   Feedbacks,
   Contact,
-  StarsCanvas
+  StarsCanvas,
+Footer
 };
